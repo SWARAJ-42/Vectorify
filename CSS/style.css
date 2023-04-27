@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: rgb(64, 59, 59);
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("../Resources/bg.png");
+  background-color: black;
+  min-height: 100vh;
+  background-attachment: fixed;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Hero-container {
+  display: flex;
+  margin: auto;
+  width: 70%;
+  padding: 200px 0;
+}
+
+.Hero-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+
+.Title {
+  font-size: 10rem;
+  font-family: "Righteous", monospace;
+  padding: 25px 10px;
+  color: white;
+}
+
+.Description {
+  font-size: 1.5rem;
+  padding: 25px 20px;
+  color: white;
+}
+
+.Hero-button {
+  background-color: rgb(93, 93, 247);
+  /* border: 1px solid rgb(255, 255, 255); */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  width: fit-content;
+  margin: 0px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+.Hero-button:hover {
+  cursor: pointer;
+  background-color: rgb(141, 141, 255);
+  color: rgb(57, 63, 63);
+}
+
+.headings {
+  font-size: 80px;
+  padding-top: 100px;
+}
+

@@ -1,0 +1,197 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* position: sticky; */
+    top: 0;
+    min-height: 52.44px;
+    z-index: 100;
+}
+.nav-list{
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+.nav-list li{
+    list-style: none;
+    padding: 30px 30px;
+}
+.nav-list li a{
+    color: white;
+    font-size: 1.5rem;
+}
+.nav-list li a:hover{
+    color: aqua;
+}
+
+.rightnav{
+    width: 30%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.logo{
+    width:10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: yellowgreen; */
+}
+.logo a img{
+    /* background-color: yellow; */
+    width: 100px;
+    padding: 20px;
+}
+.logo a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+.logo a .span {
+    width: 55%;
+    font-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile{
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: yellow; */
+}
+.profile img{
+    width:100%;
+    border: 6px solid black;
+    border-radius: 30px;
+}
+
+.background-nav{
+    background: rgba(0, 0, 0, .75);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.text-biggest{
+    font-size: 90px;
+}
+.text-big{
+    font-size: 50px;
+    padding: 33px 0px;
+}
+.text-smaller{
+    font-size: 30px;
+}
+
+.burger{
+    display:none;
+    position: absolute;
+    cursor: pointer;
+    right: 2%;
+    top: 15px;
+}
+
+.line{
+    width: 25px;
+    background-color: white;
+    height: 4px;
+    margin: 3px 3px;
+}
+
+
+@media only screen and (max-width: 820px){
+    .navbar{
+        flex-direction: column;
+        height: 400px;
+        transition: all .2s ease-out;
+    }
+    .nav-list{
+        flex-direction: column;
+    }
+    .rightnav{
+        justify-content: center;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav-resp{
+        height:52px;
+    }
+    .v-class-resp{
+        opacity: 0;
+    }
+    .box-main{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .box-main .secondHalf{
+        width: fit-content;
+        justify-content: center;
+        align-items: center;
+    }
+    .box-main .firstHalf{
+        width: fit-content;
+        justify-content: center;
+        align-items: center;
+    }
+    .section{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .section img{
+        margin-top: 40px ;
+        width: 100%;
+    }
+    .section .buttons{
+        text-align: center;
+    }
+    .logo{
+        min-width:130px;
+        min-height:60px;
+    }
+    .profile{
+        min-width:50px;
+        min-height:70px;
+    }
+}
+
+@media only screen and (max-width: 418px){
+    .text-biggest{
+        font-size: 60px;
+    }
+    .text-big{
+        font-size: 40px;
+        padding: 33px 0px;
+    }
+    .text-smaller{
+        font-size: 30px;
+    }
+    
+    .text-smallest{
+        font-size: 12px;
+        padding: 10px;
+    }
+    .btn{
+        font-size: 12px;
+    }
+    .btn:hover{
+        font-size: 12px;
+    }
+    .btn-submit{
+        font-size: 15px;
+    }
+    .form-input{
+        font-size: 15px;
+    }
+    .text-footer{
+        font-size: 10px;
+    }
+    .paras{
+        padding: 5px;
+    }
+}

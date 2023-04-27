@@ -1,0 +1,75 @@
+.Feature-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 100%;
+  /* background-image: radial-gradient(white, aqua); */
+  /* padding: 15rem 0rem; */
+  /* border-bottom: 4px solid black ; */
+}
+
+.Feature-section div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 80px;
+}
+
+.Feature-section img {
+  width: 500px;
+  padding: 20px;
+}
+
+#feature1 img {
+  width: 600px;
+}
+
+#feature2 {
+  background-color: rgb(227, 227, 227);
+}
+
+.feature {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.left {
+  flex-direction: column;
+  padding: 50px;
+  text-align: right;
+  width: 50%;
+  font-size: 1.5rem;
+}
+.center {
+  padding: 50px;
+  text-align: center;
+  width: 50%;
+}
+.right {
+  flex-direction: column;
+  padding: 50px;
+  text-align: left;
+  width: 50%;
+  font-size: 1.5rem;
+}
+
+.Feature-button {
+  background-color: rgb(93, 93, 247);
+  /* border: 1px solid rgb(255, 255, 255); */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 30px;
+  width: fit-content;
+  margin: 40px 0px;
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  
+}
+
+.Feature-button:hover {
+    cursor: pointer;
+    background-color: rgb(141, 141, 255);
+    color: rgb(57, 63, 63);
+  }
