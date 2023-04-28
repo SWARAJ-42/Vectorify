@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="CSS/contact.css">
     <link rel="stylesheet" href="CSS/responsive.css">
     <link rel="stylesheet" href="CSS/teams.css">
+    <link rel="stylesheet" href="CSS/id-navigation.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,7 +35,6 @@
             <li><a href="">Contact</a></li>
         </ul>
         <div class="rightnav v-class-resp">
-            <!-- <div class="profile"><a href="login.html"><img src="/static/profile.jpg" alt="profile"></a></div> -->
         </div>
         <div class="burger">
             <div class="line"></div>
@@ -42,6 +42,7 @@
             <div class="line"></div>
         </div>
     </nav>
+
     <section class="Hero-section parallax">
         <div class="Hero-container">
             <div class="Hero-left">
@@ -52,7 +53,7 @@
                     Empowering Students to become the best version of themselves.
                 </div>
                 <button class="Hero-button">
-                    See More
+                    Get Started
                 </button>
             </div>
             <!-- <div class="Hero-right">
@@ -60,12 +61,20 @@
             </div> -->
         </div>
     </section>
-    <section class="Feature-section">
+    <section class="id-navigation">
+        <div class="id-nav-container">
+            <a class="id-nav-img" href="#Feature-section"><img src="./Resources/feature.png" alt=""></a>
+            <a class="id-nav-img" href="#Pricing-section"><img src="./Resources/pricing.png" alt=""></a>
+            <a class="id-nav-img" href="#Team-section"><img src="./Resources/team.png" alt=""></a>
+            <a class="id-nav-img" href="#Contact-section"><img src="./Resources/send.png" alt=""></a>
+        </div>
+    </section>
+    <section id="Feature-section" class="Feature-section">
         <h1 class="headings">Our Services</h1>
         <div id="feature1" class="feature">
             <div class="left">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci officiis temporibus?
                 <button class="Feature-button">
-                    get started
+                    Explore
                 </button>
             </div>
             <div class="center"><img id="small" src="Resources/online_meet.png" alt="" class=""></div>
@@ -77,14 +86,14 @@
             <div class="right">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus eveniet, veritatis
                 vero.
                 <button class="Feature-button">
-                    get started
+                    Explore
                 </button>
             </div>
         </div>
         <div id="feature3" class="feature">
             <div class="left">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt a enim libero deleniti.
                 <button class="Feature-button">
-                    get started
+                    Explore
                 </button>
             </div>
             <div class="center"><img src="Resources/resource.png" alt="" class=""></div>
@@ -94,64 +103,74 @@
     <!-- <section class="display" ng-app="angularSlider">
         <slider width="600" height="400"></slider>
     </section> -->
-    <div class="wrapper">
-        <h1 class="headings" style="color: white">Our Team</h1>
-        <div class="our_team">
-            <div class="team_member">
-              <div class="member_img">
-                 <img src="./Resources/member_1.png" alt="our_team">
-                <div class="social_media">
-                   <div class="facebook item"><i class="fab fa-facebook-f"></i></div>
-                   <div class="twitter item"><i class="fab fa-twitter"></i></div>
-                   <div class="instagram item"><i class="fab fa-instagram"></i></div>
-                 </div>
-              </div>
-              <h3>john wright</h3>
-              <span>CEO</span>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione perspiciatis, error deleniti quaerat beatae doloribus incidunt excepturi. Fugit deleniti accusantium neque hic quidem voluptatibus cumque.</p>
+    <section id="Team-section">
+        <div class="wrapper">
+            <h1 class="headings" style="color: white">Our Team</h1>
+            <div class="our_team">
+                <div class="team_member">
+                    <div class="member_img">
+                        <img src="./Resources/member_1.png" alt="our_team">
+                        <div class="social_media">
+                            <div class="facebook item"><i class="fab fa-facebook-f"></i></div>
+                            <div class="twitter item"><i class="fab fa-twitter"></i></div>
+                            <div class="instagram item"><i class="fab fa-instagram"></i></div>
+                        </div>
+                    </div>
+                    <h3>john wright</h3>
+                    <span>CEO</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione perspiciatis, error deleniti
+                        quaerat beatae doloribus incidunt excepturi. Fugit deleniti accusantium neque hic quidem
+                        voluptatibus cumque.</p>
+                </div>
+                <div class="team_member">
+                    <div class="member_img">
+                        <img src="./Resources/member_2.png" alt="our_team">
+                        <div class="social_media">
+                            <div class="facebook item"><i class="fab fa-facebook-f"></i></div>
+                            <div class="twitter item"><i class="fab fa-twitter"></i></div>
+                            <div class="instagram item"><i class="fab fa-instagram"></i></div>
+                        </div>
+                    </div>
+                    <h3>barbara mori</h3>
+                    <span>Accountant</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores maiores temporibus, architecto
+                        optio asperiores mollitia pariatur error, quaerat voluptatibus minima eos quo nostrum, maxime
+                        necessitatibus.</p>
+                </div>
+                <div class="team_member">
+                    <div class="member_img">
+                        <img src="./Resources/member_3.png" alt="our_team">
+                        <div class="social_media">
+                            <div class="facebook item"><i class="fab fa-facebook-f"></i></div>
+                            <div class="twitter item"><i class="fab fa-twitter"></i></div>
+                            <div class="instagram item"><i class="fab fa-instagram"></i></div>
+                        </div>
+                    </div>
+                    <h3>harry dickens</h3>
+                    <span>Product Manager</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione perspiciatis, error deleniti
+                        quaerat beatae doloribus incidunt excepturi. Fugit deleniti accusantium neque hic quidem
+                        voluptatibus cumque.</p>
+                </div>
+                <div class="team_member">
+                    <div class="member_img">
+                        <img src="./Resources/member_4.png" alt="our_team">
+                        <div class="social_media">
+                            <div class="facebook item"><i class="fab fa-facebook-f"></i></div>
+                            <div class="twitter item"><i class="fab fa-twitter"></i></div>
+                            <div class="instagram item"><i class="fab fa-instagram"></i></div>
+                        </div>
+                    </div>
+                    <h3>sammy louise</h3>
+                    <span>product analyst</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione perspiciatis, error deleniti
+                        quaerat beatae doloribus incidunt excepturi. Fugit deleniti accusantium neque hic quidem
+                        voluptatibus cumque.</p>
+                </div>
             </div>
-            <div class="team_member">
-               <div class="member_img">
-                 <img src="./Resources/member_2.png" alt="our_team">
-                 <div class="social_media">
-                   <div class="facebook item"><i class="fab fa-facebook-f"></i></div>
-                   <div class="twitter item"><i class="fab fa-twitter"></i></div>
-                   <div class="instagram item"><i class="fab fa-instagram"></i></div>
-                 </div>
-              </div>
-              <h3>barbara mori</h3>
-              <span>Accountant</span>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores maiores temporibus, architecto optio asperiores mollitia pariatur error, quaerat voluptatibus minima eos quo nostrum, maxime necessitatibus.</p>
-          </div>
-            <div class="team_member">
-               <div class="member_img">
-                 <img src="./Resources/member_3.png" alt="our_team">
-                 <div class="social_media">
-                   <div class="facebook item"><i class="fab fa-facebook-f"></i></div>
-                   <div class="twitter item"><i class="fab fa-twitter"></i></div>
-                   <div class="instagram item"><i class="fab fa-instagram"></i></div>
-                 </div>
-              </div>
-              <h3>harry dickens</h3>
-              <span>Product Manager</span>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione perspiciatis, error deleniti quaerat beatae doloribus incidunt excepturi. Fugit deleniti accusantium neque hic quidem voluptatibus cumque.</p>
-          </div>
-            <div class="team_member">
-               <div class="member_img">
-                 <img src="./Resources/member_4.png" alt="our_team">
-                 <div class="social_media">
-                   <div class="facebook item"><i class="fab fa-facebook-f"></i></div>
-                   <div class="twitter item"><i class="fab fa-twitter"></i></div>
-                   <div class="instagram item"><i class="fab fa-instagram"></i></div>
-                 </div>
-              </div>
-              <h3>sammy louise</h3>
-              <span>product analyst</span>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione perspiciatis, error deleniti quaerat beatae doloribus incidunt excepturi. Fugit deleniti accusantium neque hic quidem voluptatibus cumque.</p>
-          </div>  
         </div>
-    </div>	
-    <section id="contact" class="Contactme">
+    </section>
+    <section id="Contact-section" class="Contactme">
         <!-- CONTACT heading -->
         <div class="text-large Contact-text">
             Contact Us
@@ -183,7 +202,8 @@
             </div>
         </div>
     </section>
-    <span style="padding: 20px; text-align: center; display: block; color: grey; background-color: black;">Vectorify - all copyrights reserved</span>
+    <span style="padding: 20px; text-align: center; display: block; color: grey; background-color: black;">Vectorify -
+        all copyrights reserved</span>
     <script src="script.js"></script>
 </body>
 

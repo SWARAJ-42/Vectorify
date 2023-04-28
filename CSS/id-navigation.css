@@ -1,0 +1,27 @@
+.id-navigation {
+    background: rgb(255, 255, 255);
+    padding: 0px 30px;
+    border-bottom: 1px solid black ;
+}
+
+.id-navigation img {
+    width: 15%;
+    min-width: 20px;
+}
+
+.id-nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.id-nav-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.id-nav-img:hover {
+    background-color: rgb(174, 174, 174);
+}
