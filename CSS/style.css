@@ -17,7 +17,7 @@ a:hover {
   /* The image used */
   background-image: url("../Resources/bg.png");
   background-color: black;
-  min-height: 100vh;
+  min-height: 95vh;
   background-attachment: fixed;
   /* background-position: center; */
   background-repeat: no-repeat;
@@ -27,7 +27,7 @@ a:hover {
 .Hero-container {
   display: flex;
   margin: auto;
-  width: 70%;
+  width: 90%;
   padding: 200px 0;
 }
 
@@ -72,6 +72,6 @@ a:hover {
 
 .headings {
   font-size: 80px;
-  padding-top: 100px;
+  padding: 100px 0px;
 }
 
