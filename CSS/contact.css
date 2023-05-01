@@ -16,7 +16,7 @@
     font-size: 50px;
     font-family: 'Righteous', cursive;
     /* font-family: 'VT323', monospace; */
-    color: aqua;
+    color: white;
   }
 
   /* Style inputs with type="text", select elements and textareas */
@@ -27,20 +27,20 @@
     width: 40%; /* Full width */
     padding: 20px; /* Some padding */
     margin: 10px;
-    border: 2px solid aqua;
+    border: 2px solid rgb(255, 255, 255);
     font-size: 15px;
     resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
-    color: white;
+    color: rgb(255, 255, 255);
     background-color: black;
     min-width: 250px;
   }
   
   /* Style the submit button with a specific background color etc */
   input[type="submit"] {
-    color: aqua;
+    color: rgb(255, 255, 255);
     margin: 20px 0px;
     padding: 12px 20px;
-    border: 2px solid aqua;
+    border: 2px solid rgb(255, 255, 255);
     background-color: black;
     border-radius: 4px;
     cursor: pointer;
@@ -49,7 +49,7 @@
   
   /* When moving the mouse over the submit button, add a darker green color */
   input[type="submit"]:hover {
-    background-color: aqua;
+    background-color: rgb(255, 255, 255);
     color: black;
   }
   

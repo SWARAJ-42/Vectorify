@@ -22,10 +22,11 @@
 }
 
 .our_team{
-  width: auto;
+  width: 70%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin: auto;
 }
 
 .our_team .team_member{
@@ -33,6 +34,7 @@
   margin: 5px;
   background: #fff;
   padding: 20px 10px;
+  height: fit-content;
 }
 
 .our_team .team_member .member_img{
