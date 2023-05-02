@@ -34,7 +34,6 @@
   }
 }
 
-
 /* feature section */
 @media only screen and (max-width: 1350px) {
   .Feature-section img {
@@ -100,14 +99,12 @@
   .Title {
     font-size: 60px;
   }
-  .Feature-section div{
+  .Feature-section div {
     padding: 30px 30px;
   }
 
-
   .left {
     font-size: 15px;
-  
   }
   .right {
     font-size: 15px;

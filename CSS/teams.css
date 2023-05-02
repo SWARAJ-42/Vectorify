@@ -32,7 +32,6 @@
 .our_team .team_member{
   width: 250px;
   margin: 5px;
-  background: #fff;
   padding: 20px 10px;
   height: fit-content;
 }
@@ -60,16 +59,7 @@
   line-height: 18px;
   letter-spacing: 2px;
   margin: 15px 0 0px;
-}
-
-.our_team .team_member span{
-  font-size: 10px;
-}
-
-.our_team .team_member p{
-  margin-top: 20px;
-  font-size: 14px;
-  line-height: 20px;
+  color: aliceblue;
 }
 
 .our_team .team_member .member_img .social_media{

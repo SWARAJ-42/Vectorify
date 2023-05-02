@@ -133,3 +133,53 @@
       position: static;
     }
   }
+
+  /* Pricing section */
+@media screen and (max-width: 540px) {
+  .card {
+    width: 300px;
+    margin: 20px;
+  }
+
+  .card .card-pricing__header {
+    padding: 40px 10px;
+    border-bottom: 1px solid #ebebeb;
+  }
+
+  .card .card-pricing__header h4 {
+    font-size: 20px;
+  }
+
+  .card .card-pricing__header p {
+    font-size: 16px;
+  }
+
+  .card-pricing__price {
+    font-size: 60px;
+  }
+
+  .card-pricing__price span {
+    margin-right: 3px;
+    font-size: 40px;
+    position: relative;
+    bottom: 5px;
+    vertical-align: middle;
+  }
+
+  .card-pricing__list {
+    padding: 0px 50px;
+    /* list-style: none; */
+  }
+
+  .card-pricing__list li {
+    margin-bottom: 12px;
+    color: #000000;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 1;
+  }
+
+  .card-pricing__footer {
+    padding: 45px 0;
+  }
+}
