@@ -1,140 +1,144 @@
-  .Pricing-section {
-    padding: 100px 0;
-    background-color: #4039c3;
+.Pricing-section {
+  padding: 100px 0;
+  background-image: url("../Resources/Pricing-bg.png");
+  background-color: #4039c3;
+  background-attachment: fixed;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  width: 100%;
+  max-width: 1400px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section-intro {
+  padding-bottom: 80px;
+}
+
+.section-intro h1 {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.pricing-cards {
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 360px;
+  margin: 20px;
+  background-color: #faf9ff;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 2px 2px rgba(40, 25, 114, 0.1);
+  transition: all 0.3s;
+}
+
+.card .card-pricing__header {
+  padding: 40px 10px;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.card .card-pricing__header h4 {
+  margin-bottom: 5px;
+  color: #1d2441;
+  font-size: 27px;
+  font-weight: 900;
+}
+
+.card .card-pricing__header p {
+  margin-bottom: 27px;
+  color: #000000;
+  font-size: 16px;
+}
+
+.card-pricing__price {
+  font-size: 60px;
+}
+
+.card-pricing__price span {
+  margin-right: 3px;
+  font-size: 40px;
+  position: relative;
+  bottom: 5px;
+  vertical-align: middle;
+}
+
+.card-pricing__list {
+  padding: 30px 50px;
+  /* list-style: none; */
+  border-bottom: 1px solid #ebebeb;
+  text-align: left;
+}
+
+.card-pricing__list li {
+  margin-bottom: 12px;
+  color: #000000;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.card-pricing__footer {
+  padding: 45px 0;
+}
+
+.card-pricing__footer .button {
+  padding: 15px 30px;
+  color: #1e1859;
+  background: transparent;
+  font-size: 15px;
+  font-weight: 700;
+  border: 1px solid #dbd9e6;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+/* Add hover effect on card elements */
+
+.card:hover {
+  background: #ffffff;
+  box-shadow: 0 20px 25px 5px rgba(33, 20, 106, 0.1);
+}
+
+.card:hover .card-pricing__header h4,
+.card:hover .card-pricing__header p,
+.card:hover .card-pricing__price {
+  color: #2b0076;
+}
+
+.card:hover .card-pricing__footer .button {
+  color: #faf9ff;
+  background: linear-gradient(to right, #2b0076 0%, #7939be 100%);
+}
+
+/* Write the media query to make responsive */
+
+@media screen and (max-width: 1200px) {
+  .pricing-table__wrapper {
+    padding-top: 0px;
   }
-  
-  .container {
-    width: 100%;
-    max-width: 1400px;
-    min-width: 320px;
-    margin: 0 auto;
-    padding: 0 15px;
-  }
-  
-  .section-intro {
-    padding-bottom: 80px;
-  }
-  
-  .section-intro h1 {
-    color: #ffffff;
-    font-size: 36px;
-    font-weight: 700;
-    text-align: center;
-  }
-  
+
   .pricing-cards {
-    width: 100%;
+    position: static;
   }
-  
-  .row {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  
-  .card {
-    width: 360px;
-    margin: 20px;
-    background-color: #faf9ff;
-    text-align: center;
-    border-radius: 5px;
-    box-shadow: 0 2px 2px rgba(40, 25, 114, 0.1);
-    transition: all 0.3s;
-  }
-  
-  .card .card-pricing__header {
-    padding: 40px 10px;
-    border-bottom: 1px solid #ebebeb;
-  }
-  
-  .card .card-pricing__header h4 {
-    margin-bottom: 5px;
-    color: #1d2441;
-    font-size: 27px;
-    font-weight: 900;
-  }
-  
-  .card .card-pricing__header p {
-    margin-bottom: 27px;
-    color: #000000;
-    font-size: 16px;
-  }
-  
-  .card-pricing__price {
-    font-size: 60px;
-  }
-  
-  .card-pricing__price span {
-    margin-right: 3px;
-    font-size: 40px;
-    position: relative;
-    bottom: 5px;
-    vertical-align: middle;
-  }
-  
-  .card-pricing__list {
-    padding: 30px 50px;
-    /* list-style: none; */
-    border-bottom: 1px solid #ebebeb;
-    text-align: left;
+}
 
-  }
-  
-  .card-pricing__list li {
-    margin-bottom: 12px;
-    color: #000000;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 1.8;
-  }
-  
-  .card-pricing__footer {
-    padding: 45px 0;
-  }
-  
-  .card-pricing__footer .button {
-    padding: 15px 30px;
-    color: #1e1859;
-    background: transparent;
-    font-size: 15px;
-    font-weight: 700;
-    border: 1px solid #dbd9e6;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: all 0.3s;
-  }
-  
-  /* Add hover effect on card elements */
-  
-  .card:hover {
-    background: #ffffff;
-    box-shadow: 0 20px 25px 5px rgba(33, 20, 106, 0.1);
-  }
-  
-  .card:hover .card-pricing__header h4,
-  .card:hover .card-pricing__header p,
-  .card:hover .card-pricing__price {
-    color: #2b0076;
-  }
-  
-  .card:hover .card-pricing__footer .button {
-    color: #faf9ff;
-    background: linear-gradient(to right, #2b0076 0%, #7939be 100%);
-  }
-  
-  /* Write the media query to make responsive */
-  
-  @media screen and (max-width: 1200px) {
-    .pricing-table__wrapper {
-      padding-top: 0px;
-    }
-  
-    .pricing-cards {
-      position: static;
-    }
-  }
-
-  /* Pricing section */
+/* Pricing section */
 @media screen and (max-width: 540px) {
   .card {
     width: 300px;

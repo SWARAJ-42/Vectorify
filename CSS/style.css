@@ -19,7 +19,7 @@ a:hover {
   background-color: black;
   min-height: 95vh;
   background-attachment: fixed;
-  /* background-position: center; */
+  background-position-x: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
