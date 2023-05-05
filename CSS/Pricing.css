@@ -65,16 +65,14 @@
   font-size: 16px;
 }
 
-.card-pricing__price {
-  font-size: 60px;
-}
 
 .card-pricing__price span {
   margin-right: 3px;
-  font-size: 40px;
+  font-size: 60px;
   position: relative;
   bottom: 5px;
   vertical-align: middle;
+  /* text-decoration: line-through; */
 }
 
 .card-pricing__list {
@@ -104,7 +102,7 @@
   font-weight: 700;
   border: 1px solid #dbd9e6;
   border-radius: 30px;
-  cursor: pointer;
+  /* cursor: pointer; */
   transition: all 0.3s;
 }
 
@@ -124,6 +122,10 @@
 .card:hover .card-pricing__footer .button {
   color: #faf9ff;
   background: linear-gradient(to right, #2b0076 0%, #7939be 100%);
+}
+.card:hover .card-pricing__footer .button a{
+  color: #faf9ff;
+  /* background: linear-gradient(to right, #2b0076 0%, #7939be 100%); */
 }
 
 /* Write the media query to make responsive */
@@ -156,10 +158,6 @@
 
   .card .card-pricing__header p {
     font-size: 16px;
-  }
-
-  .card-pricing__price {
-    font-size: 60px;
   }
 
   .card-pricing__price span {

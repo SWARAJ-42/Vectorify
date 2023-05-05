@@ -11,7 +11,9 @@ burger.addEventListener('click', ()=>{
     navbar.classList.toggle('h-nav-resp');
 })
 
-
-function herobutton () {
-    
+function hide_navigator(){
+    rightnav.classList.toggle('v-class-resp');
+    logo.classList.toggle('v-class-resp');
+    navlist.classList.toggle('v-class-resp');
+    navbar.classList.toggle('h-nav-resp');
 }

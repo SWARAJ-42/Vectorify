@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="./Resources/companylogo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/navigation2.css">
     <link rel="stylesheet" href="CSS/feature.css">
-    <link rel="stylesheet" href="CSS/contact.css">
+    <link rel="stylesheet" href="CSS/footer.css">
     <link rel="stylesheet" href="CSS/responsive.css">
     <link rel="stylesheet" href="CSS/teams.css">
     <link rel="stylesheet" href="CSS/id-navigation.css">
@@ -31,10 +32,10 @@
                     <img src="./Resources/companylogo.png" alt="logo">
                 </a>
             </div>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#Pricing-section">Pricing</a></li>
-            <li><a href="./about_us.html">About us</a></li>
-            <li><a href="#Contact-section">Contact</a></li>
+            <li><a href="index.html" onclick="hide_navigator()">Home</a></li>
+            <li><a href="#Pricing-section" onclick="hide_navigator()">Pricing</a></li>
+            <li><a href="./about_us.html" onclick="hide_navigator()">About us</a></li>
+            <li><a href="#Footer-section" onclick="hide_navigator()">Contact</a></li>
         </ul>
         <div class="rightnav v-class-resp">
         </div>
@@ -68,13 +69,15 @@
             <a class="id-nav-img" href="#Feature-section"><img src="./Resources/feature.png" alt=""></a>
             <a class="id-nav-img" href="#Pricing-section"><img src="./Resources/pricing.png" alt=""></a>
             <a class="id-nav-img" href="#Team-section"><img src="./Resources/team.png" alt=""></a>
-            <a class="id-nav-img" href="#Contact-section"><img src="./Resources/send.png" alt=""></a>
+            <a class="id-nav-img" href="#Footer-section"><img src="./Resources/send.png" alt=""></a>
         </div>
     </section>
     <section id="Feature-section" class="Feature-section">
         <h1 class="headings" style="margin: auto; text-align: center;">What's on the table</h1>
         <div id="feature1" class="feature">
-            <div class="left"><p>Providing <b>personalised mentorship</b> from mentors from top <b>IITs/GMC's/AIIMS</b> to help you achieve your dream.</p> 
+            <div class="left">
+                <p>Providing <b>personalised mentorship</b> from mentors from top <b>IITs/GMC's/AIIMS</b> to help you
+                    achieve your dream.</p>
                 <a class="Feature-button" href="#Pricing-section">
                     Get Started
                 </a>
@@ -85,14 +88,17 @@
         <div id="feature2" class="feature">
             <div class="left"></div>
             <div class="center"><img src="Resources/chat_support.png" alt=""></div>
-            <div class="right"><p>Providing <b>24X7 Chat support</b> and Video sessions on <b>Google Meets</b>.</p> 
+            <div class="right">
+                <p>Providing <b>24X7 Chat support</b> and Video sessions on <b>Google Meets</b>.</p>
                 <a class="Feature-button" href="#Pricing-section">
                     Get Started
                 </a>
             </div>
         </div>
         <div id="feature3" class="feature">
-            <div class="left"><p><b>Helping</b> them to track there preparation level and indentify there weak areas and provide <b>proper guidance</b> at a <b>Affordable price</b>.</p>
+            <div class="left">
+                <p><b>Helping</b> them to track there preparation level and indentify there weak areas and provide
+                    <b>proper guidance</b> at a <b>Affordable price</b>.</p>
                 <a class="Feature-button" href="#Pricing-section">
                     Get Started
                 </a>
@@ -104,7 +110,7 @@
     <section id="Pricing-section" class="Pricing-section">
         <div class="container">
             <div class="section-intro">
-                <h1 style="font-size: 40px;">Best Subscription Plans</h1>
+                <h1 style="font-size: 40px;">Best Mentorship Plans</h1>
                 <!-- <div class="section-style"></div> -->
             </div>
             <div class="pricing-table__wrapper">
@@ -112,9 +118,10 @@
                     <div class="row">
                         <div class="card">
                             <div class="card-pricing__header">
-                                <h4>11th Standard</h4>
-                                <h1 class="card-pricing__price"><span>&#x20B9;</span>180</h1>
+                                <h4>11th Standard</h4><br>
+                                <h1 class="card-pricing__price" style="text-decoration: line-through;">&#x20B9;240</h1>
                                 <p>Per Month</p>
+                                <h1 class="card-pricing__price"><span>&#x20B9;180</span></h1>
                             </div>
                             <ul class="card-pricing__list">
                                 <li>3 Sessions per month + 1 Demo Session.</li>
@@ -122,15 +129,18 @@
                                 <li>24X7 Chat support and Video google meets.</li>
                                 <li>60Rs/Session.</li>
                             </ul>
+                            <!-- <p style="margin: 10px 40px;">* Free for students applying for exams in 2023.</p> -->
+                            <br><br><br>
                             <div class="card-pricing__footer">
-                                <button class="button">Call now : 801-015-9874</button>
+                                <button class="button"><a href="https://forms.gle/pQQAqYQzoWx1LBQaA">Register now</a></button>
                             </div>
                         </div>
                         <div class="card">
                             <div class="card-pricing__header">
-                                <h4>12th Standard</h4>
-                                <h1 class="card-pricing__price"><span>&#x20B9;</span>240</h1>
+                                <h4>12th Standard</h4><br>
+                                <h1 class="card-pricing__price" style="text-decoration: line-through;">&#x20B9;240</h1>
                                 <p>Per Month</p>
+                                <h1 class="card-pricing__price"><span>*Free</span></h1>
                             </div>
                             <ul class="card-pricing__list">
                                 <li>4 Sessions per month + 1 Demo Session.</li>
@@ -138,15 +148,17 @@
                                 <li>24X7 Chat support and google meets.</li>
                                 <li>60Rs/Session</li>
                             </ul>
+                            <p style="margin: 10px 40px;">* Free for students applying for exams in 2023.</p>
                             <div class="card-pricing__footer">
-                                <button class="button">Call now : 880-503-3538</button>
+                                <button class="button"><a href="https://forms.gle/pQQAqYQzoWx1LBQaA">Register now</a><button>
                             </div>
                         </div>
                         <div class="card">
                             <div class="card-pricing__header">
-                                <h4>Droppers</h4>
-                                <h1 class="card-pricing__price"><span>&#x20B9;</span>240</h1>
+                                <h4>Droppers</h4><br>
+                                <h1 class="card-pricing__price" style="text-decoration: line-through;">&#x20B9;240</h1>
                                 <p>Per Month</p>
+                                <h1 class="card-pricing__price"><span>*Free</span></h1>
                             </div>
                             <ul class="card-pricing__list">
                                 <li>4 Sessions per month + 1 Demo Session.</li>
@@ -154,8 +166,9 @@
                                 <li>24X7 Chat support and google meets.</li>
                                 <li>60Rs/Session</li>
                             </ul>
+                            <p style="margin: 10px 40px;">* Free for students applying for exams in 2023.</p>
                             <div class="card-pricing__footer">
-                                <button class="button">Call now : 777-508-6303</button>
+                                <button class="button"><a href="https://forms.gle/pQQAqYQzoWx1LBQaA">Register now</a></button>
                             </div>
                         </div>
                     </div>
@@ -226,33 +239,35 @@
             </div>
         </div>
     </section>
-    <section id="Contact-section" class="Contactme">
-        <!-- CONTACT heading -->
-        <div class="text-large Contact-text">
-            Mail Us
+    <section class="footer" id="Footer-section">
+        <div class="our_address_container">
+            <div class="our_address_left">
+                <h1>Contact us</h1>
+                <address>
+                    <p><img src="https://img.icons8.com/ios-filled/14/eeeeee/marker.png">&ensp; Gokhale Hall of Residence, IIT kharagpur</p>
+                    <p><img src="https://img.icons8.com/ios-filled/14/eeeeee/phone.png">&ensp; 777-508-6303</p>
+                    <p><img src="https://img.icons8.com/ios-filled/14/eeeeee/mail.png">&ensp; vectorify21@gmail.com</p>
+                    <p><img src="https://img.icons8.com/ios-filled/14/eeeeee/clock.png">&ensp; 8:00 AM – 8:00 PM</p>
+                </address>
+            </div>
+            <div class="our_address_right">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.8758931616485!2d87.30393637605067!3d22.320532942160284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1d45e5c7874d41%3A0x22cd1b39a228028a!2sGokhale%20Hall%20Of%20Residence!5e0!3m2!1sen!2sin!4v1683270487204!5m2!1sen!2sin"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
-        <!-- The message form -->
-        <div class="container">
-            <form action="action_page.php">
-                <input type="text" id="name" name="name" placeholder="Your name..">
-                <input type="email" id="email" name="email" placeholder="Your email ID..">
-                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-                <div class="sub">
-                    <input type="submit" value="Send Message!">
-                </div>
-            </form>
-            <div class="follow">
-                <div class="drop-down">
-                    <span style="padding-right: 20px;">Follow us on: </span>
-                    <a target="_blank" href="https://www.linkedin.com/in/swaraj-biswal-2a8771252/"><img
-                            src="Resources/linkedin.png" class="icon img-zoom" alt=""></a>
-                    <a target="_blank" href="https://www.facebook.com/profile.php?id=100087323571590"><img
-                            src="Resources/facebook.png" class="icon img-zoom" alt=""></a>
-                </div>
+        <div class="follow">
+            <div class="drop-down">
+                <span style="padding-right: 20px;">Follow us on: </span>
+                <a target="_blank" href="https://www.linkedin.com/company/vectorify/"><img
+                        src="Resources/linkedin.png" class="icon img-zoom" alt=""></a>
+                <a target="_blank" href="https://www.facebook.com/profile.php?id=100092432496698&mibextid=LQQJ4d"><img
+                        src="Resources/facebook.png" class="icon img-zoom" alt=""></a>
             </div>
         </div>
     </section>
-    <span style="padding: 20px; text-align: center; display: block; color: grey; background-color: black;">Vectorify -
+    <span style="padding: 20px; text-align: center; display: block; color: grey; background-color: rgb(19, 19, 31);">Vectorify -
         all copyrights reserved</span>
     <script src="script.js"></script>
 </body>
