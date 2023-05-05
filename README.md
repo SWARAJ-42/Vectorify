@@ -1,4 +1,4 @@
-# vectorify.github.io
+# Vectorify
 Mentorship website for JEE and NEET aspirants.
 
 
